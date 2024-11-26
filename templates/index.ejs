@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Soccer Players</title>
+  <style>
+    input { padding: 8px; font-size: 16px; }
+    body { background-color: yellow; }
+  </style>
+</head>
+<body>
+    <h3>Premier League Soccer Players:</h3>
+    <p>The form below will enable you to see all of the Premier League soccer players with the entered number of goals as a threshold. Data is retrieved from the Fantasy Premier League API. (You can only use the form once, to use it again you have to restart the app)</p>
+  <form action="/filter-players" method="POST">
+    <label for="goalThreshold">Minimum Goals:</label>
+    <input type="number" id="goalThreshold" name="goalThreshold" placeholder="Enter number of goals" required>
+    <button type="submit">Filter Players</button>
+  </form>
+</body>
+</html>
